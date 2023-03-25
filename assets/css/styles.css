@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;1,100&display=swap');
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+.navbar-brand {
+  font-family: "Lobster", cursive;
+  font-size: 39px;
+
+  @media (max-width: 418px) {
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.5);
+      /* establecemos el color de fondo con un 50% de transparencia */
+    }
+  }
+ 
+}
+.carousel-indicators {
+  top: 105%;
+}
+.carousel-indicators li {
+  background-color: #373a3c;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.footer{
+ width: auto;   
+
+}
+
+.titulo{
+  color: black;
+}
+.cambiante {
+  color: red;
+}
+
+
+.underline {
+  text-decoration: underline;
+
+}
+
+.borde{
+
+  border-top-width: 10px
+}
+
+body{font-family: 'Josefin Sans', sans-serif;
+background-color: rgb(250, 219, 239);
+
+
+}
+
+.rojo:hover{color:red}
+.blue:hover{color:blue}
+.yellow:hover{color:goldenrod}
+.rosado:hover{color:rgb(191, 130, 248)   }
+.violeta:hover{color:violet}
+.verde:hover{color:green}
+
+.fa-brands:hover{
+color: green;
+
+}
+
+.gold:hover{
+color: gold;
+
+}
+
+.barrita{
+  background-color: transparent ;
+  
+}
+
+.barrita:hover{
+
+background-color: violet;
+
+}
+
+body{ width: auto;
+
+
+}
+.opaco{
+ 
+ background-color: transparent
+
+}
+
+.opaco:hover{
+  background-color: white;
+
+
+}
+
+.cart-summary {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid #ccc;
+  max-height: 25%; /* altura máxima */
+  overflow-y: auto; /* agregar barras de desplazamiento si la lista crece más allá de la altura máxima */
+  padding: 10px;
+  width: 50%;
+  
+  
+}
+
+@media only screen and (max-width: 450px) {
+  .cart-summary {
+    height: 525%;
+    min-height: 150px; /* ajusta el valor según sea necesario */
+    max-height: 10%; /* ajusta el valor según sea necesario */
+  }
+}
+
+
+.fuente{
+
+color: black;
+font-weight:bold
+}
+
+.cart-summary {
+  position: fixed;
+  bottom: -12%;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.cart-summary:hover{
+  position: fixed;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.altura{
+  height: 400px;
+
+}
+
