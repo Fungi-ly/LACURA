@@ -163,4 +163,20 @@ $(function () {
   });
   
   
+
+  $(document).ready(function() {
+    // Agregar evento de clic al botón de "Detalle de compra"
+    $(".cart-summary h2").click(function() {
+      // Alternar la clase "abierto" en el contenedor del carrito
+      $(".cart-summary").toggleClass("abierto");
+    });
+
+    // Agregar evento de clic al documento para cerrar el carrito cuando se hace clic fuera de él
+    $(document).click(function(event) {
+      if (!$(event.target).closest(".cart-summary").length && $(".cart-summary").hasClass("abierto")) {
+        $(".cart-summary").removeClass("abierto");
+      }
+    });
+  });
+
   
