@@ -22,11 +22,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -37,55 +33,48 @@
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"
   ></script>
+
+
   </head>
   <body>
+    
      <div class="container">
 
 
-
-             <nav class="navbar navbar-expand-lg opaco mb-4  navbar-collapse fixed-top barrita ">
-        <div class="container nav-title  img-responsive "> 
-
-
-<img  class="navbar-brand   img-responsive text-white fs-1"  src="assets/img/logo.jpg" width="80" height="90" alt="logo">
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button></div>
-
-      <div class="collapse navbar-collapse  navbar navbar-expand-lg" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto pr-5">
-          <li class="nav-item active">
-            <a class="nav-link fuente " href="#">Inicio <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link fuente  " href="#Menu">Productos</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link  fuente" href="#precio">Precios</a>         
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link  fuente" href="#contacto">Contacto</a>         
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link  fuente" href="#contacto">PideDelivery</a>         
-          </li>
- 
-      </div>
-    </nav>
+      <nav class="navbar navbar-expand-lg opaco mb-4 navbar-collapse fixed-top barrita">
+          <img class="navbar-brand img-responsive text-white fs-1" src="assets/img/logo.png" width="50" height="60" alt="logo">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      
+        <div class="collapse navbar-collapse navbar navbar-expand-lg" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto pr-5">
+            <li class="nav-item active">
+              <a class="nav-link fuente d-block d-lg-none" href="#">Inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link fuente d-none d-lg-block" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link fuente" href="#Menu">Productos</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link fuente" href="#precio">Precios</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link fuente" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fuente d-block d-lg-none" href="https://chat.whatsapp.com/D1oyjs4Tbs4LBIzvxpeSdB">Mayoristas</a>
+              <a class="nav-link fuente d-none d-lg-block" href="https://chat.whatsapp.com/D1oyjs4Tbs4LBIzvxpeSdB">Mayoristas</a>
+            </li>
+          </ul>
+        </div>|
+      </nav>
  
 
 
-    <main class="container  ">
+    <main class="container">
       <header>
         
         <div class="row pt-5">
@@ -196,8 +185,11 @@
     <br>
     
       <section class="border-top py-5  " >
-        <h1  id="Menu" class="text-center volver text-dark reset " >ESCOGE TU ARTICULO</h1>
+        <h1  id="Menu" class="text-center volver text- reset " >ESCOGE TU ARTICULO</h1>
         <div class="row aspect-ratio-4x3 ">
+
+    
+
 
         <article class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-4 text-center">
             <div class="card" >
@@ -212,9 +204,21 @@ tiene propiedades antiespasmódicas y se utiliza a menudo para aliviar los espas
 tiene propiedades antimicrobianas y se utiliza a menudo para tratar infecciones y heridas.
  es conocida por sus propiedades cicatrizantes y se utiliza a menudo para tratar quemaduras, cortes y otras heridas.
                   </p>
-                  <button class="btn btn-danger add-to-cart mb-3" data-id="1" data-name="Aceite de Lavanda" data-price="2" data-size="small"  >Agregar al carrito</button>
+                  <button  class="btn btn-danger add-to-cart mb-3 id=" id="myButton" id="myButton" data-id="1" data-name="Aceite de Lavanda" data-price="2" data-size="small"  >Agregar al carrito</button>
                                            
-                    
+                  
+                  <script>        
+                    $(document).ready(function() {
+                      $("[id^='myButton']").click(function() {
+                        $(this).addClass("violeta");
+                        setTimeout(function() {
+                          $(this).removeClass("violeta");
+                        }, 500);
+                      });
+                    });
+                  </script>
+
+
                     <select class="form-control product-size">
                       <option value="30ml" data-price="3990">30ml</option>
                       <option value="60ml" data-price="6990">60ml</option>
@@ -240,7 +244,7 @@ tiene propiedades antimicrobianas y se utiliza a menudo para tratar infecciones 
                   
                    y antiinflamatorios que pueden ayudar a reducir la inflamación
               </p>
-              <button class="btn btn-danger add-to-cart mb-3" data-id="2" data-name=" Aceite del arbol del Té"  data-size="small"  >Agregar al carrito</button> 
+              <button class="btn btn-danger add-to-cart mb-3"  id="myButton" data-id="2" data-name=" Aceite del arbol del Té"  data-size="small"  >Agregar al carrito</button> 
               <select class="form-control product-size">
                 <option value="30ml" data-price="3990">30ml</option>
                 <option value="60ml" data-price="6990">60ml</option>
@@ -264,7 +268,7 @@ tiene propiedades antimicrobianas y se utiliza a menudo para tratar infecciones 
 
           puede reducir la inflamación y la hinchazón, lo que puede ayudar a tratar afecciones como la artritis y la tendinitis.puede aliviar la congestión nasal y la tos, ayudando a aflojar la mucosidad y facilitando la respiración.puede relajar los músculos lisos del tracto gastrointestinal </p>
 
-          <button class="btn btn-danger add-to-cart mb-3" data-id="3" data-name=" Aceite de menta"  data-size="small"  >Agregar al carrito</button> 
+          <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="3" data-name=" Aceite de menta"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30ml</option>
             <option value="60ml" data-price="6990">60ml</option>
@@ -298,7 +302,7 @@ tiene propiedades antimicrobianas y se utiliza a menudo para tratar infecciones 
                   
                 también tiene propiedades relajantes que pueden ayudar a reducir el estrés y la ansiedad.
                 </p>
-                 <button class="btn btn-danger add-to-cart mb-3" data-id="4" data-name="  Aceite de Eucaliptus"  data-size="small"  >Agregar al carrito</button> 
+                 <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="4" data-name="  Aceite de Eucaliptus"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30ml</option>
             <option value="60ml" data-price="6990">60ml</option>
@@ -327,7 +331,7 @@ tiene propiedades astringentes que pueden ayudar a reducir el exceso de grasa en
 
  puede ayudar a estimular la mente y el cuerpo, aumentando la energía y la concentración.
                 </p>
-                <button class="btn btn-danger add-to-cart mb-3" data-id="5" data-name="  Aceite de Limón"  data-size="small"  >Agregar al carrito</button> 
+                <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="5" data-name="  Aceite de Limón"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30ml</option>
             <option value="60ml" data-price="6990">60ml</option>
@@ -353,7 +357,7 @@ tiene propiedades astringentes que pueden ayudar a reducir el exceso de grasa en
 tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus en el cuerpo.
  puede ayudar a estimular la producción de orina y mejorar la eliminación de líquidos en el cuerpo.
                 </p>
-                <button class="btn btn-danger add-to-cart mb-3" data-id="6" data-name="  Aceite de naranja"  data-size="small"  >Agregar al carrito</button> 
+                <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="6" data-name="  Aceite de naranja"  data-size="small"  >Agregar al carrito</button> 
                 <select class="form-control product-size">
                   <option value="30ml" data-price="3990">30ml</option>
                   <option value="60ml" data-price="6990">60ml</option>
@@ -385,7 +389,7 @@ tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus 
                   
              se ha utilizado para aliviar los síntomas de la indigestión y para estimular la digestión.
                 </p>
-                <button class="btn btn-danger add-to-cart mb-3" data-id="7" data-name="  Aceite de romero"  data-size="small"  >Agregar al carrito</button> 
+                <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="7" data-name="  Aceite de romero"  data-size="small"  >Agregar al carrito</button> 
                 <select class="form-control product-size">
                   <option value="30ml" data-price="3990">30ml</option>
                   <option value="60ml" data-price="6990">60ml</option>
@@ -416,7 +420,7 @@ tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus 
 
  es rico en ácidos grasos esenciales y proteínas, lo que lo convierte en un ingrediente útil para el cuidado de la piel y el cabello.
                 </p>
-                <button class="btn btn-danger add-to-cart mb-3" data-id="8" data-name="  Aceite de Almendras"  data-size="small"  >Agregar al carrito</button> 
+                <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="8" data-name="  Aceite de Almendras"  data-size="small"  >Agregar al carrito</button> 
                 <select class="form-control product-size">
                   <option value="30ml" data-price="3990">30ml</option>
                   <option value="60ml" data-price="6990">60ml</option>
@@ -447,7 +451,7 @@ tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus 
                   
                  tiene propiedades relajantes y puede ser beneficioso para aliviar el estrés y la ansiedad.
                 </p>
-                <button class="btn btn-danger add-to-cart mb-3" data-id="9" data-name=" Aceite de Salvia"  data-size="small"  >Agregar al carrito</button> 
+                <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="9" data-name=" Aceite de Salvia"  data-size="small"  >Agregar al carrito</button> 
                 <select class="form-control product-size">
                   <option value="30ml" data-price="3990">30ml</option>
                   <option value="60ml" data-price="6990">60ml</option>
@@ -479,7 +483,7 @@ tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus 
                 
                 puede ayudar a promover la cicatrización de heridas y reducir la apariencia de cicatrices.
               </p>
-              <button class="btn btn-danger add-to-cart mb-3" data-id="10" data-name=" Aceite de Jazmin"  data-size="small"  >Agregar al carrito</button> 
+              <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="10" data-name=" Aceite de Jazmin"  data-size="small"  >Agregar al carrito</button> 
               <select class="form-control product-size">
                 <option value="30ml" data-price="3990">30ml</option>
                 <option value="60ml" data-price="6990">60ml</option>
@@ -512,7 +516,7 @@ tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus 
               
               puede ayudar a regular los niveles de azúcar en la sangre y puede ser beneficioso para personas con diabetes.
             </p>
-            <button class="btn btn-danger add-to-cart mb-3" data-id="11" data-name=" Aceite de canela"  data-size="small"  >Agregar al carrito</button> 
+            <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="11" data-name=" Aceite de canela"  data-size="small"  >Agregar al carrito</button> 
             <select class="form-control product-size">
               <option value="30ml" data-price="3990">30ml</option>
               <option value="60ml" data-price="6990">60ml</option>
@@ -539,7 +543,7 @@ tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus 
             puede ayudar a promover el sueño y puede ser útil para personas que tienen dificultades para dormir.
                         puede ayudar a aliviar los espasmos musculares y puede ser útil para personas con dolores menstruales.
           </p>
-          <button class="btn btn-danger add-to-cart mb-3" data-id="12" data-name=" Aceite de manzanilla"  data-size="small"  >Agregar al carrito</button> 
+          <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="12" data-name=" Aceite de manzanilla"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30ml</option>
             <option value="60ml" data-price="6990">60ml</option>
@@ -572,7 +576,7 @@ tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus 
             
             
           </p>
-          <button class="btn btn-danger add-to-cart mb-3" data-id="13" data-name=" Aceite de rosas"  data-size="small"  >Agregar al carrito</button> 
+          <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="13" data-name=" Aceite de rosas"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30ml</option>
             <option value="60ml" data-price="6990">60ml</option>
@@ -601,7 +605,7 @@ tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus 
             
              puede tener propiedades antivirales y puede ser útil para personas que padecen infecciones virales.
           </p>
-          <button class="btn btn-danger add-to-cart mb-3" data-id="14" data-name=" Aceite de Ruda"  data-size="small"  >Agregar al carrito</button> 
+          <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="14" data-name=" Aceite de Ruda"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30ml</option>
             <option value="60ml" data-price="6990">60ml</option>
@@ -630,7 +634,7 @@ tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus 
             
           es rico en antioxidantes que pueden ayudar a proteger el cuerpo contra el daño celular causado por los radicales libres.
           </p>
-          <button class="btn btn-danger add-to-cart mb-3" data-id="15" data-name=" Aceite de orégano"  data-size="small"  >Agregar al carrito</button> 
+          <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="15" data-name=" Aceite de orégano"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30ml</option>
             <option value="60ml" data-price="6990">60ml</option>
@@ -661,7 +665,7 @@ tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus 
             
             puede tener propiedades antifúngicas y puede ser útil para personas con infecciones por hongos en la piel.
           </p>
-          <button class="btn btn-danger add-to-cart mb-3" data-id="16" data-name=" Aceite de Caléndula"  data-size="small"  >Agregar al carrito</button> 
+          <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="16" data-name=" Aceite de Caléndula"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30ml</option>
             <option value="60ml" data-price="6990">60ml</option>
@@ -691,7 +695,7 @@ tiene propiedades desinfectantes que pueden ayudar a combatir bacterias y virus 
 
     puede ayudar a estimular la renovación celular y la regeneración de la piel, lo que puede ser beneficioso para personas con piel dañada o envejecida.
           </p>
-          <button class="btn btn-danger add-to-cart mb-3" data-id="17" data-name=" Aceite de Manzanas rojas"  data-size="small"  >Agregar al carrito</button> 
+          <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="17" data-name=" Aceite de Manzanas rojas"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30ml</option>
             <option value="60ml" data-price="6990">60ml</option>
@@ -720,7 +724,7 @@ Propiedades antiinflamatorias: El aceite de cardo mariano contiene compuestos an
 contiene antioxidantes que pueden ayudar a proteger el cuerpo contra el daño celular causado por los radicales libres.
 
           </p>
-          <button class="btn btn-danger add-to-cart mb-3" data-id="18" data-name=" Aceite de Cardo"  data-size="small"  >Agregar al carrito</button> 
+          <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="18" data-name=" Aceite de Cardo"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30ml</option>
             <option value="60ml" data-price="6990">60ml</option>
@@ -749,7 +753,7 @@ contiene antioxidantes que pueden ayudar a proteger el cuerpo contra el daño ce
             
             Propiedades antiinflamatorias: El CBD puede tener propiedades antiinflamatorias que pueden ser útiles para tratar enfermedades inflamatorias como la enfermedad de Crohn y la artritis reumatoide.
           </p>
-          <button class="btn btn-danger add-to-cart mb-3" data-id="19" data-name=" Crema de Aceite de CBD"  data-size="small"  >Agregar al carrito</button> 
+          <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="19" data-name=" Crema de Aceite de CBD"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30gr</option>
             <option value="60ml" data-price="6990">60gr</option>
@@ -778,7 +782,7 @@ contiene antioxidantes que pueden ayudar a proteger el cuerpo contra el daño ce
             
             Propiedades antiinflamatorias: El CBD puede tener propiedades antiinflamatorias que pueden ser útiles para tratar enfermedades inflamatorias como la enfermedad de Crohn y la artritis reumatoide.
           </p>
-          <button class="btn btn-danger add-to-cart mb-3" data-id="20" data-name="Aceite de CBD"  data-size="small"  >Agregar al carrito</button> 
+          <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="20" data-name="Aceite de CBD"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">30ml</option>
             <option value="60ml" data-price="6990">60ml</option>
@@ -808,7 +812,7 @@ contiene antioxidantes que pueden ayudar a proteger el cuerpo contra el daño ce
             
              es efectivo para la limpieza de la piel y el cabello, eliminando la suciedad y el exceso de aceites.
           </p>
-          <button class="btn btn-danger add-to-cart mb-3" data-id="21" data-name="Aceite de CBD"  data-size="small"  >Agregar al carrito</button> 
+          <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="21" data-name="Aceite de CBD"  data-size="small"  >Agregar al carrito</button> 
           <select class="form-control product-size">
             <option value="30ml" data-price="3990">60gr</option>
             <option value="60ml" data-price="6990">180gr</option>
@@ -840,7 +844,7 @@ contiene antioxidantes que pueden ayudar a proteger el cuerpo contra el daño ce
           
           Propiedades relajantes: El agua de rosas puede ayudar a aliviar el estrés y la ansiedad, y se utiliza a menudo en aromaterapia para promover la relajación.
         </p>
-        <button class="btn btn-danger add-to-cart mb-3" data-id="22" data-name=" Agua de Rosas"  data-size="small"  >Agregar al carrito</button> 
+        <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="22" data-name=" Agua de Rosas"  data-size="small"  >Agregar al carrito</button> 
         <select class="form-control product-size">
           <option value="30ml" data-price="3990">100ml</option>
           <option value="60ml" data-price="6990">180ml</option>
@@ -869,7 +873,7 @@ contiene antioxidantes que pueden ayudar a proteger el cuerpo contra el daño ce
             
              es efectivo para la limpieza de la piel y el cabello, eliminando la suciedad y el exceso de aceites
         </p>
-        <button class="btn btn-danger add-to-cart mb-3" data-id="23" data-name=" Aceite de Coco"  data-size="small"  >Agregar al carrito</button> 
+        <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="23" data-name=" Aceite de Coco"  data-size="small"  >Agregar al carrito</button> 
         <select class="form-control product-size">
           <option value="30ml" data-price="3990">30ml</option>
           <option value="60ml" data-price="6990">60ml</option>
@@ -898,7 +902,7 @@ Propiedades analgésicas: El aceite de cúrcuma puede tener propiedades analgés
 
 Propiedades para la piel: El aceite de cúrcuma puede tener propiedades beneficiosas para la piel, como ayudar a reducir el acné, mejorar la textura de la piel y reducir las manchas oscuras.
         </p>
-        <button class="btn btn-danger add-to-cart mb-3" data-id="24" data-name=" Aceite de Cúrcuma"  data-size="small"  >Agregar al carrito</button> 
+        <button class="btn btn-danger add-to-cart mb-3" id="myButton" data-id="24" data-name=" Aceite de Cúrcuma"  data-size="small"  >Agregar al carrito</button> 
         <select class="form-control product-size">
           <option value="30ml" data-price="3990">30ml</option>
           <option value="60ml" data-price="6990">60ml</option>
@@ -912,17 +916,24 @@ Propiedades para la piel: El aceite de cúrcuma puede tener propiedades benefici
   
       
     </main>
+
+
+
+    
     </div>
- 
-    <div class="cart-summary text-center fixed-bottom opaco w-100 px-3 py-2 "style="height: 400px">
-  <h2 class="mb-3 fuente ">Detalle de tu compra</h2>
+ <p>
+    <div class="cart-summary text-center fixed-bottom opaco w-100 px-3 py-2 altura ">
+  <section></section><h5 class="mb-3 fuente">Detalle de tu compra <h6 class="text-danger" > Desliza hacia abajo</h6> <h6>llevas <div id="cart-count"> 0 </div> Aceites</h5>   </h3></section>
+  
+</p>
+                            
   <ul class="cart-items fuente "></ul>
   <p class="fuente">Total: <span class="cart-total fuente">
     
 
     <form>
       <h3> Datos de Envío</h3>
-      <p>ingresa tus datos y pulsa solicita</p>
+      <p>ingresa tus datos y pulsa solicitar</p>
       <div>
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required>
@@ -947,9 +958,7 @@ Propiedades para la piel: El aceite de cúrcuma puede tener propiedades benefici
   </span></p>
   <a id="encarga_aqui" href="#">
     <button class="btn btn-danger enviar-pedido mb-3 enviar-pedido" onclick="enviarPedido()">solicitar</button>
-     <h3>llevas </h3>  
-    <div id="cart-count"> 0 </div>
-    <h3>articulos </h3>  
+  <br><br><br><br><br><br><br><br><br>
   </a>
 
 
@@ -964,7 +973,7 @@ Propiedades para la piel: El aceite de cúrcuma puede tener propiedades benefici
       
         
         
-       <a id="encarga_aqui" href="#">  <button class="btn btn-danger enviar-pedido" onclick="enviarPedido()">Encargar aquí</button> </a>
+       <a id="encarga_aqui" href="https://chat.whatsapp.com/D1oyjs4Tbs4LBIzvxpeSdB">  <button class="btn btn-danger enviar-pedido" onclick="enviarPedido()">Encargar aquí</button> </a>
        
       </footer>
       <footer class="container-fluid bg-dark bg-70%  py-5 text-center">
@@ -991,7 +1000,7 @@ Propiedades para la piel: El aceite de cúrcuma puede tener propiedades benefici
      
 
           
-            
+            |
             <a href=""><i class="fa-brands fa-linkedin fa-3x mx-2"></i></a>
             
             <a href=""><i class="fa-brands fa-twitter-square fa-3x mx-2"></i></a>
