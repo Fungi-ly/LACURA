@@ -56,16 +56,19 @@ background-color: rgb(250, 219, 239);
 
 
 }
-
+.yellow2{background-color:goldenrod}
 .rojo:hover{color:red}
 .blue:hover{color:blue}
 .yellow:hover{color:goldenrod}
 .rosado:hover{color:rgb(191, 130, 248)   }
-.violeta:hover{color:violet}
-.verde:hover{color:green}
-
-.fa-brands:hover{
-color: green;
+.violeta:hover{ background-color:rgb(104, 10, 104);
+  color: white;}
+.verde:hover{
+  background-color: green;
+  color: white;
+}
+.verde2{background-color:green}
+.fa-brands:hover{color: gold
 
 }
 
@@ -73,6 +76,8 @@ color: green;
 color: gold;
 
 }
+
+
 
 .barrita{
   background-color: transparent ;
@@ -96,6 +101,7 @@ body{ width: auto;
 }
 
 .opaco:hover{
+
   background-color: white;
 
 
@@ -106,22 +112,19 @@ body{ width: auto;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.8);
   border-top: 1px solid #ccc;
-  max-height: 25%; /* altura máxima */
-  overflow-y: auto; /* agregar barras de desplazamiento si la lista crece más allá de la altura máxima */
+  max-height: 400px; /* altura máxima ajustada */
+  overflow-y: scroll; /* agregar barras de desplazamiento */
   padding: 10px;
   width: 50%;
-  
-  
 }
 
 @media only screen and (max-width: 450px) {
   .cart-summary {
-    height: 525%;
-    min-height: 150px; /* ajusta el valor según sea necesario */
-    max-height: 10%; /* ajusta el valor según sea necesario */
+    height: auto;
+    min-height: 270px;
+    max-height: 80%;
   }
 }
-
 
 .fuente{
 
@@ -147,7 +150,94 @@ font-weight:bold
 
 
 .altura{
-  height: 400px;
+  height: 8rem;
 
 }
 
+.btn-danger:active{
+ background-color: green
+
+}
+
+.abierto {
+  bottom: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 0;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  text-align: center;
+}
+
+.service img {
+  max-width: 100%;
+  height: auto;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-nav .nav-link:focus {
+  background-color: transparent !important;
+}
+
+.navbar-nav .nav-link {
+  color: #333; /* cambia el valor del color a tu gusto */
+}
