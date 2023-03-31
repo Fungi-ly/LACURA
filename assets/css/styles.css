@@ -250,3 +250,20 @@ header h1 {
   font-family: 'Pacifico', cursive;
 
 }
+
+
+
+.webpay-btn {
+  background: url('https://www.webpay.cl/assets/img/boton_webpaycl.svg') no-repeat center;
+  background-size: contain;
+  padding-left: 50px; /* ajusta este valor según sea necesario */
+  height: 50px; /* ajusta este valor según sea necesario */
+  width: 200px; /* ajusta este valor según sea necesario */
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
